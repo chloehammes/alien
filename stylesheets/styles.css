@@ -1,0 +1,675 @@
+/* Put your CSS here */
+@font-face {
+  font-family: 'Centrum';
+  font-style: normal;
+  font-weight: normal;
+  src:url('fonts/centrum.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Modes';
+  font-style: normal;
+  font-weight: normal;
+  src:url('fonts/modes.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aliens';
+  font-style: normal;
+  font-weight: normal;
+  src:url('fonts/aliens.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Helveticablack';
+  font-style: normal;
+  font-weight: normal;
+  src:url('fonts/hv-black.ttf') format('truetype');
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+.navbutton {
+  color: #f2f2f2;
+  display: block;
+  float: left;
+  font-family: Modes;
+  font-size: 35px;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #33FF33;
+  color: black;
+}
+
+.label {
+  background-color:#262626;
+  color: #33FF33;
+  font-family: Centrum;
+  font-size:50px;
+  height:70px;
+  letter-spacing: 3px;
+  text-align:center;
+  text-shadow: 1px 1px 2px #33FF33;
+}
+
+.center-title {
+  font-family: Aliens;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin: auto;
+  padding: 180px 200px;
+  text-align: center;
+}
+
+.bgimg1 {
+background-attachment: fixed;
+background-image: url("parallax/weyland.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 700px;
+}
+
+
+.bgimg2 {
+background-attachment: fixed;
+background-image: url("parallax/ripley.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 700px;
+}
+
+.bgimg3 {
+background-attachment: fixed;
+background-image: url("parallax/bts.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 800px;
+}
+
+.bgimg4 {
+background-attachment: fixed;
+background-image: url("parallax/room.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 800px;
+}
+
+.bgimg5 {
+background-attachment: fixed;
+background-image: url("parallax/egg3.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+width: 100%;
+}
+
+.about {
+  font-family: Centrum;
+  font-size: 45px;
+  color: #33FF33;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  text-indent: 5%;
+}
+
+.bigtext {
+  font-family: Centrum;
+  font-size: 50px;
+  color: black;
+  text-shadow: 1px 1px 0.5px #33FF33;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.plot1description {
+  font-family: Centrum;
+  font-size: 45px;
+  color: #33cc33;
+  text-align: center;
+  text-indent: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 50px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+.history {
+  font-family: Centrum;
+  font-size: 45px;
+  color: #33cc33;
+  text-align: left;
+  text-indent: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 50px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+.plots {
+  color: black;
+  font-family: Centrum;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #33FF33;
+}
+
+ul.a {
+  list-style-type: circle;
+  color: #33FF33;
+  font-family: Centrum;
+  font-size: 45px;
+  color: #33cc33;
+  text-align: left;
+  text-indent: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 50px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+img {
+  float: right;
+}
+
+/* START LIGHTBOX CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 10px;
+}
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  border-style: double;
+  border-color: black;
+}
+
+.column2 {
+  float: left;
+  width: 19%;
+  padding: 10px;
+  margin: 10px;
+  border-style: double;
+  border-color: #33FF33;
+  margin-left: 4.5%;
+}
+
+/* The Modal (background) */
+.oldmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.oldmodal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.oldclose {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.oldclose:hover,
+.oldclose:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  line-height: 0;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  text-shadow: 1px 1px 2px #33FF33;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 5px;
+  font-family: Modes;
+}
+
+/* Caption text */
+.oldcaption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-family: Modes;
+  font-size: 30px;
+  color: #33FF33;
+  text-shadow: 1px 1px 2px #33FF33;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* END LIGHTBOX CSS */
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #33FF33; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 25px; /* Increase font size */
+  font-family: Modes;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* End new */
+
+/* New Modal code (Delete if not working) */
+#myImg, #myImg2, #myImg3, #myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+#myImg3:hover {opacity: 0.7;}
+#myImg4:hover {opacity: 0.7;}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+/* Caption of Modal Image */
+#caption, #caption2, #caption3, #caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #33FF33;
+  font-family: Modes;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #33FF33;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption, #caption2, #caption3, #caption4 {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  float: none;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close, .close2, .close3, .close4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+  /* End new modal code */
+
+  .next {
+    background-color: #33FF33;
+  }
+
+  .prev {
+    background-color: #33FF33;
+  }
+
+  .container {
+    background-color: #000000;
+    border-color: #bbb;
+    border-style: inherit;
+
+  }
+
+  .card, .card-default {
+    background-color: #000;
+  }
+
+  label {
+    font-family: Centrum;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #33FF33;
+  }
+
+  .form-control {
+    border-style: solid;
+    border-color: #33FF33;
+    background-color: #000;
+    font-family: Modes;
+    color: #33FF33
+  }
+
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  input[type='radio']:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: #33FF33;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid #33FF33;
+  }
+
+  input[type='radio']:checked:after {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      top: -2px;
+      left: -1px;
+      position: relative;
+      background-color: #000;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid #33FF33;
+  }
+
+  option {
+    background-color: #000;
+    color: #33FF33;
+    font-family: Modes;
+  }
+
+  input[type='flavorShot']:after {
+    background-color: #000;
+  }
+
+  select {
+    background-color: #000;
+  }
+
+  .select {
+    background-color: #000;
+  }
+
+.form-control-range {
+  -webkit-appearance: none;  /* Override default CSS styles */
+appearance: none;
+width: 100%; /* Full-width */
+height: 15px; /* Specified height */
+background: #33FF33; /* Grey background */
+outline: none; /* Remove outline */
+opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+transition: opacity .2s;
+}
+
+.form-control-range:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.form-control-range::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #000; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-style: solid;
+  border-color: #33FF33;
+}
+
+.form-control-range::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #000; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#demo {
+  font-family: Centrum;
+  font-size: 30px;
+  color: black;
+  text-shadow: 1px 1px 2px #33FF33;
+}
+
+.temp {
+  font-family: Centrum;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #33FF33;
+  text-align: center;
+}
+
+  h1 {
+  font-family: Centrum;
+  font-size: 50px;
+  color: black;
+  text-shadow: 1px 1px 2px #33FF33;
+  text-align: center;
+  }
+
+h4 {
+  font-family: Centrum;
+  font-size: 50px;
+  color: black;
+  text-shadow: 1px 1px 2px #33FF33;
+  text-align: center;
+}
+
+.placeholder {
+  color: black;
+}
+
+.btn-primary {
+  color: #33FF33;
+  background-color: #000;
+  border-color: #33FF33;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #33FF33;
+  border-color: #000;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #000;
+  border-color: #fff;
+}
+
+.btn-secondary:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>My Awesome Website</title>
+    <meta name="author" content="Chloe Hammes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+
+<body>
+  <header>
+
+    <div class="navbar">
+      <a href="index.html" class="navbutton">Home</a>
+      <a href="plot.html" class="navbutton">Plot</a>
+      <a href="history.html" class="navbutton">History</a>
+      <a href="scenes.html" class="navbutton">Scenes</a>
+      <a href="feedback.html" class="navbutton">Feedback</a>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> <!-- Call the top function -->
+
+
+</header>
+
+
+
+
+<div class="bgimg5"></div>
+
+<div class="label" id="feedback">Feedback</div>
+
+<p class="about">Fill out the form below giving your opinion on the series</p>
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+
+<div class="container">
+  <header>
+    <h1>The Alien Franchise</h1>
+  </header>
+  <section>
+    <div class="card card-default"> <!-- Holds each input field -->
+      <div class="card-body">
+        <form data-coffee-order="form">
+          <div class="form-group">
+            <label for="coffeeOrder">Name</label>
+            <input class="form-control" name="coffee" id="coffeeOrder" autofocus required pattern="[a-zA-Z\s]+"> <!-- Text Input -->
+
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="user@company.com">
+          </div>
+
+            <p class="about">Which movie is your favorite?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Alien (1979)">
+              Alien (1979)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Aliens (1986)">
+              Aliens (1986)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Alien 3 (1992)">
+              Alien 3 (1992)
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Alien Resurrection (1997)">
+              Alien Resurrection (1997)
+            </label>
+        </div>
+
+        <div class="form-group">
+          <label for="commentInput">Why?</label>
+          <textarea class="form-control" name="comments" id="commentInput" rows="3"></textarea>
+        </div>
+
+          <div class="form-group">
+            <label for="flavorShot">How many movies should they have made?</label>
+            <select id="flavorShot" class="form-control" name="flavor">
+              <option value="">None</option>
+              <option value="1. Original is better.">1. Original is better</option>
+              <option value="2. I like me some spielberg.">2. I like me some spielberg</option>
+              <option value="3. Yeah! Celibacy!">3. Yeah! Celibacy!</option>
+              <option value="4. I LOVE human alien hybrids that look like they are in an immense amount of pain and should be put down!">4. I LOVE human alien hybrids that look like they are in an immense amount of pain and should be put down!</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="strengthLevel">On a scale of 1-100, how much do you enjoy the Alien Franchise?</label>
+            <input name="strength" id="strengthLevel" type="range" class="form-control-range" min="1" max="100" value="30">
+            <p class="temp">Value: <span id="demo"></span></p>
+          </div>
+          <button type="submit" class="btn btn-primary" onClick="clic();">Submit</button>
+          <button type="reset" class="btn btn-secondary" onClick="clik();">Reset</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card card-default">
+      <div class="card-body">
+       <div data-coffee-order="checklist">
+      </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+<p class="placeholder">Placeholder</p>
+
+
+
+<footer style="height:40px;background-color:#262626;font-family:Centrum;font-size:30px;text-align:center;color:white;letter-spacing:4px;">In space no one can hear you scream</footer>
+
+
+  <script src = " https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  charset = "utf-8"></script>
+
+  <script src="scripts/alert.js" charset="utf-8"></script>
+  <script src="scripts/validation.js" charset="utf-8"></script>
+  <script src="scripts/checklist.js" charset="utf-8"></script>
+  <script src="scripts/formhandler.js" charset="utf-8"></script>
+  <script src="scripts/datastore.js" charset="utf-8"></script>
+  <script src="scripts/truck.js" charset="utf-8"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/btn.js"></script>
+</body>
+</html>

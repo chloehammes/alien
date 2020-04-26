@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>My Awesome Website</title>
+    <meta name="author" content="Chloe Hammes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+
+<body>
+  <header>
+
+    <div class="navbar">
+      <a href="index.html" class="navbutton">Home</a>
+      <a href="plot.html" class="navbutton">Plot</a>
+      <a href="history.html" class="navbutton">History</a>
+      <a href="scenes.html" class="navbutton">Scenes</a>
+      <a href="feedback.html" class="navbutton">Feedback</a>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> <!-- Call the top function -->
+
+
+</header>
+
+
+<div class="bgimg4"></div>
+
+<div class="label" id="scenes">Scenes</div>
+
+<p class="about">There are many amazing scenes in Ridley Scott's Alien, but I've put together some of the most important or iconic throughout the movie.</p>
+
+<!-- New (Delete if not working) -->
+
+<div class="row">
+  <div class="column2">
+    <img src="lightbox/img_mother.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_derelict.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_jockey.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_facehugger.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_cut.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_chest.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_brett.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_dallas.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_order.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_937.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_ash.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_jonesy.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_lambert.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_destruct.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_shuttle.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+  </div>
+  <div class="column2">
+    <img src="lightbox/img_airlock.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myOldModal" class="oldmodal">
+  <span class="oldclose cursor" onclick="closeModal()">&times;</span>
+  <div class="oldmodal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 16</div>
+      <img src="lightbox/img_mother_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 16</div>
+      <img src="lightbox/img_derelict_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 16</div>
+      <img src="lightbox/img_jockey_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 16</div>
+      <img src="lightbox/img_facehugger_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 16</div>
+      <img src="lightbox/img_cut_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 16</div>
+      <img src="lightbox/img_chest_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 16</div>
+      <img src="lightbox/img_brett_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 16</div>
+      <img src="lightbox/img_dallas_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 16</div>
+      <img src="lightbox/img_order_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 16</div>
+      <img src="lightbox/img_937_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 16</div>
+      <img src="lightbox/img_ash_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 16</div>
+      <img src="lightbox/img_jonesy_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 16</div>
+      <img src="lightbox/img_lambert_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 16</div>
+      <img src="lightbox/img_destruct_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 16</div>
+      <img src="lightbox/img_shuttle_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 16</div>
+      <img src="lightbox/img_airlock_wide.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="oldcaption-container">
+      <p id="oldcaption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_mother_wide.jpg" style="width:95%; margin: 0 5px 0 0;" onclick="currentSlide(1)" alt="Dallas discusses the current situation with MU/TH/ER">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_derelict_wide.jpg" style="width:95%;margin: 0 5px;" onclick="currentSlide(2)" alt="The Nostromo crew finds a derelict space craft on LV-426, one of the three moons orbiting Calpamos">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_jockey_wide.jpg" style="width:95%;margin: 0 5px 0 10px;" onclick="currentSlide(3)" alt="The crew finds a fossilized Enginner, an alien species that is 15' tall">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_facehugger_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(4)" alt="Dallas and Ash watch over the organism that is attached to Kane's face">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_cut_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(5)" alt="Dallas orders Ash to cut the organism off, not knowing it has concentrated acid for blood">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_chest_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(6)" alt="The alien implanted in Kane bursts through his chest in a gruesome manner">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_brett_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(7)" alt="Brett is killed by the grown Xenomorph after trying to capture Jonesy, the ship's cat">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_dallas_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(8)" alt="Dallas is cornered and killed by the Xenomorph after trying to seal off the air vents">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_order_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(9)" alt="Ripley learns what special order 937 entails">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_937_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(10)" alt="Special order 937, implemented by Weyland Yutani and enforced by Ash, specifies the priority to capture the creature and bring it back no matter what">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_ash_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(11)" alt="Ash is decapitated by Parker after attempting to murder Ripley">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_jonesy_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(12)" alt="Ripley rescues Jonesy to take him on the escape shuttle, while waiting for Parker and Lambert to bring back the oxygen tanks">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_lambert_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(13)" alt="Parker and Lambert are killed by the Xenomorph after Lambert, in shock, doesn't move out of the way as instructed by Parker">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_destruct_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(14)" alt="Ripley engages the self destruct sequence to kill the Xenomorph, and prevent any future salvaging team from releasing it">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_shuttle_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(15)" alt="Ripley discovers that the alien stowed itself onboard the Narcissus, the USCSS Nostromo's emergeny shuttle">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lightbox/img_airlock_wide.jpg" style="width:95%; margin: 0 0 0 15px;" onclick="currentSlide(16)" alt="Ripley waits for the alien to get into position near the airlock">
+    </div>
+  </div>
+</div>
+
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+<p class="placeholder">s</p>
+
+<!-- End new -->
+
+
+
+
+<footer style="height:40px;background-color:#262626;font-family:Centrum;font-size:30px;text-align:center;color:white;letter-spacing:4px;">In space no one can hear you scream</footer>
+
+
+  <script src = " https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  charset = "utf-8"></script>
+
+  <script src="scripts/btn.js" charset="utf-8"></script>
+  <script src="scripts/slideshow.js" charset="utf-8"></script>
+</body>
+</html>
