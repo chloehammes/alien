@@ -11,18 +11,6 @@
   font-weight: normal;
   src:url('./fonts/modes.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'Aliens';
-  font-style: normal;
-  font-weight: normal;
-  src:url('./fonts/aliens.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Helveticablack';
-  font-style: normal;
-  font-weight: normal;
-  src:url('./fonts/hv-black.ttf') format('truetype');
-}
 
 body {
   font-family: Verdana, sans-serif;
@@ -58,15 +46,6 @@ body {
   letter-spacing: 3px;
   text-align:center;
   text-shadow: 1px 1px 2px #33FF33;
-}
-
-.center-title {
-  font-family: Aliens;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin: auto;
-  padding: 180px 200px;
-  text-align: center;
 }
 
 .bgimg1 {
