@@ -3,25 +3,25 @@
   font-family: 'Centrum';
   font-style: normal;
   font-weight: normal;
-  src:url('fonts/centrum.ttf') format('truetype');
+  src:url('./fonts/centrum.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Modes';
   font-style: normal;
   font-weight: normal;
-  src:url('fonts/modes.ttf') format('truetype');
+  src:url('./fonts/modes.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Aliens';
   font-style: normal;
   font-weight: normal;
-  src:url('fonts/aliens.ttf') format('truetype');
+  src:url('./fonts/aliens.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Helveticablack';
   font-style: normal;
   font-weight: normal;
-  src:url('fonts/hv-black.ttf') format('truetype');
+  src:url('./fonts/hv-black.ttf') format('truetype');
 }
 
 body {
