@@ -9,7 +9,7 @@
   font-family: 'Modes';
   font-style: normal;
   font-weight: normal;
-  src:url('./fonts/modes.ttf') format('truetype');
+  src:url('modes.ttf') format('truetype');
 }
 
 body {
